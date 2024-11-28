@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: black;
+    color: white;
+}
+
+.header {
+    background-color: #15161a; 
+}
+
+.card {
+    background-color: rgb(19, 19, 19);
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Libre+Baskerville&family=Merriweather:wght@700&family=Work+Sans&display=swap");
+
+
+
+
+
+
+.tcontainer {
+  padding: 30px;
+  margin-top: 80px;
+}
+
+p.tp {
+  max-width: 50rem;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+
+.tmain-content {
+  max-width: 50rem;
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  padding: 18px 18px 120px 18px;
+  position: relative;
+  resize: none;
+  box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%);
+  background: rgb(255 255 255);
+  border: 0.5px solid rgb(231 233 245);
+  border-radius: 16px;
+}
+
+.tmain-content:focus {
+  border: 0.3px solid rgb(43, 45, 56, 0.3);
+  outline: none;
+}
+
+p.tp,
+.tmain-content {
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.6;
+  color: black;
+
+}
+
+.tbtn-style{
+  display: flex;
+
+}
+
+button.tButton {
+  /* position: absolute; */
+  background: rgb(17 166 131);
+  color: rgb(255 255 255);
+  border-radius: 6px;
+  padding: 16px 32px;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  margin-top: -80px;
+  cursor: pointer;
+}
+
+
+button.tButton:focus,
+button.tButton:hover {
+  background: rgb(42, 201, 164);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tcounter-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tmaintext{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+@media screen and (max-width: 768px) {
+  .tcontainer {
+    margin-top: 20px;
+    
+  }
+
+  p.tp {
+    font-size: 16px;
+    word-spacing: normal;
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
+
+  .tmain-content {
+    /*border:1px solid*/
+    font-size: 16px;
+    word-spacing: normal;
+    flex-wrap: wrap;
+  }
+
+  button.tButton {
+    padding: 12px 28px;
+    font-size: 16px;
+    margin-top: -70px;
+  }
+
+  .tcounter-container {
+    flex-direction: column;
+  }
+
+  .tcounter-container p.tp:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.closehead{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+
+}
