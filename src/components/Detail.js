@@ -35,7 +35,7 @@ const Detail = () => {
     <div className='p-4 mt-4 flex flex-col md:flex-row items-center md:items-start w-full justify-center'>
     { loading ? <div className='h-96 flex w-full justify-center items-center'><ThreeCircles height={30} color="white" /></div> : 
       <>
-      <img className='h-96 block md:sticky top-24' src={data.image} alt='' />
+      <img className='w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover block md:sticky top-24' src={data.image} alt='' />
 
       <div className='md:ml-4 ml-0 w-full md:w-1/2'>
         <h1 className='text-3xl font-bold text-gray-400'>{data.title} <span className='text-xl'>({data.category})</span></h1>
