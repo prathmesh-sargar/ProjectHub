@@ -14,12 +14,6 @@ const Cards = () => {
       const _data = await getDocs(moviesRef);
       console.log(_data);
 
-      // const data = _data.filter((data) => data.category === input);
-      //   console.log(data);
-
-      // data.forEach((doc)=>{
-      //   setData((prv) => [...prv,{...(doc.data()), id: doc.id}]) 
-      // })
       // Convert _data to an array
       const dataArray = _data.docs.map((doc) => ({ ...(doc.data()), id: doc.id }));
 
@@ -30,15 +24,6 @@ const Cards = () => {
     }
     getData();
   },[input])
-  // console.log(data);
-   
-  // data.map((doc)=>{
-  //   if(doc.category === "Environment")
-  //   {
-       
-  //   }
-  //     // console.log(doc.category);
-  // });
   return (
     <>
         <div className="w-full mt-3">
@@ -62,8 +47,8 @@ const Cards = () => {
 
           </select>
          </div>
-    <div className="flex flex-wrap justify-between px-3 mt-2">
-    {loading ? <div className="w-full flex justify-center items-center h-96"><ThreeDots height={40} color="white" /></div> : 
+    <div className="grid grid-cols-2 md:grid-cols-4 px-3 mt-2">
+    {loading ? <div className="ml-[80px] md:ml-[450px] w-full flex justify-center items-center h-96"><ThreeDots height={40} color="white" /></div> : 
       data.map((e) => {
         return (
           <Link to={`/detail/${e.id}`}>
